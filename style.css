@@ -25,7 +25,7 @@ a {
     
     width: 1442px;
     width: 100%;
-    background: url('/assets/images/Header_Background.png');
+    background: url('assets/images/Header_Background.png');
 }
 
 /* header */
@@ -263,7 +263,7 @@ a {
 .cards {
     width: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     margin-top: 97px;
     padding-left: 113px;
 }
@@ -502,6 +502,7 @@ a {
     margin: 17px 5px 0 -0px;
     position: relative;
     top: 68px;
+    background-color: #343434;
 }
 
 .January’s-Promo {
@@ -539,7 +540,6 @@ a {
     margin: 0 0 25px 0;
     letter-spacing: 0.081em;
     height: 135px;
-    color: #27292c;
     font-family: "Open Sans";
     font-size: 29px;
     font-weight: 400;
@@ -548,6 +548,8 @@ a {
 
 }
 .January’s-Promo__btn {
+    color: #ffffff;
+    background-color: #343434;
     font-size: 26px;
     width: 63%;
     font-weight: 400;
@@ -563,7 +565,7 @@ a {
 /* pizza */
 .pizza {
     width: 100%;
-    background: url('/assets/images/Header_Background.png');
+    background: url('assets/images/Header_Background.png');
     height: 1045px;
     position: relative;
 }
@@ -862,9 +864,14 @@ a {
     font-size: 32px;
     font-weight: 400;
     margin: 2px 250px 0 0;
+    transition:all .3s linear;
 
 }
 
+.footer__title:hover {
+    color: #7d9d00;
+    transition:all .3s linear;
+}
 
 .footer__text {
     width: 89%;
@@ -878,6 +885,11 @@ a {
     text-align: left;
     line-height: 1.2;
     padding: 39px 0 0 38px;
+    transition:all .3s linear;
+}
+.footer__text:hover {
+    color: #7d9d00;
+    transition:all .3s linear;
 }
 
 .footer__text span {
@@ -914,6 +926,11 @@ a {
     font-family: Montserrat;
     font-size: 32px;
     font-weight: 400;
+    transition:all .3s linear;
+}
+.about__title:hover {
+    color: #7d9d00;
+    transition:all .3s linear;
 }
 
 
@@ -931,7 +948,15 @@ a {
     word-spacing: -3px;
     letter-spacing: 0.08em;
     padding: 0 0px 17.4px 3px;
+    transition:all .3s linear;
 }
+
+.about__link:hover {
+    
+    color: #7d9d00;
+    transition:all .3s linear;
+}
+
 .services {
     flex: 1 0 20%;
     display: flex;
@@ -947,7 +972,15 @@ a {
     font-weight: 400;
     margin: 2px 0 39px 0px;
     letter-spacing: 0.09em;
+    transition:all .3s linear;
 }
+
+.services__title:hover {
+    
+    color: #7d9d00;
+    transition:all .3s linear;
+}
+
 .services__menu {
     display: flex;
     flex-direction: column;
@@ -960,6 +993,13 @@ a {
     letter-spacing: 0.09em;
     font-weight: 400;
     padding: 0 0px 17.4px 0px;
+    transition:all .3s linear;
+}
+
+.services__link:hover {
+    
+    color: #7d9d00;
+    transition:all .3s linear;
 }
 .other {
     flex: 1 0 20%;
@@ -976,6 +1016,13 @@ a {
     font-weight: 400;
     margin: 0 0 39px 0;
     letter-spacing: 0.14em;
+    transition:all .3s linear;
+}
+
+.other__title:hover {
+    
+    color: #7d9d00;
+    transition:all .3s linear;
 }
 .other__menu {
     display: flex;
@@ -989,6 +1036,13 @@ a {
     letter-spacing: 0.09em;
     font-weight: 400;
     padding: 0 0px 16.4px 0px;
+    transition:all .3s linear;
+}
+
+.other__link:hover {
+    
+    color: #7d9d00;
+    transition:all .3s linear;
 }
 
 
@@ -1047,6 +1101,18 @@ a {
 
 }
 
+
+@media (max-width: 1310px) {
+    .input__btn {
+    
+        right: 438px;
+    }
+
+    .footer__text {
+        width: 94%;
+        
+    }
+}
 @media (max-width: 1285px) {
     .input__btn {
         min-width: 15%;
@@ -1082,6 +1148,8 @@ a {
     }
 }
 
+
+
 @media (max-width:1200px) {
     .blog__title {
         width: 72%;
@@ -1108,7 +1176,30 @@ a {
     .footer__inner {
         display: flex;
         flex-wrap: wrap;
+        display: flex;
+        padding: 138px 0 0 0;
     }
+
+    .footer__content {
+
+        flex: 1 0 100%;
+    }
+
+    .footer__text {
+        text-align: center;
+        padding: 39px 51px 0 0;
+    }
+
+    .footer__title {
+        text-align: center;
+        margin: 2px 43px 0 0;
+    }
+
+    .footer__icon {
+        margin: 85px 49px 39px 0;
+    }
+
+
 
     .input__block input {
         width: 28%;
@@ -1189,37 +1280,16 @@ a {
 
         margin: 229px 0px 0 0;
     }
-
-    .other {
-        
-    }
-
-    .footer__content {
-
-        flex: 1 0 100%;
-    }
-
-    .footer__text {
-        text-align: center;
-        padding: 39px 51px 0 0;
-    }
-
-    .footer__title {
-        text-align: center;
-        margin: 2px 43px 0 0;
-    }
-
-    .footer__icon {
-        margin: 85px 49px 39px 0;
-    }
-
-    .footer__inner {
-        display: flex;
-        padding: 138px 0 0 0;
-    }
 }
 
 @media (max-width: 991px) {
+
+   
+
+    .cards {
+
+    flex-wrap: wrap;
+    }
     .italian-menu__title {
         margin: 0px 0 27px 0;
         }
@@ -1304,6 +1374,7 @@ a {
 
         .intro__image {
             width: 38%;
+    height: 50%;
         }
 
         .intro__image1 {
@@ -1351,6 +1422,12 @@ a {
             width: 83%;
             font-size: 36px;
         }
+        .footer__text {
+            width: 87%;
+        }
+        .footer__text span {
+            display: inline;
+        }
 
         .January’s-Promo__logo img {
             max-width: 395px;
@@ -1365,6 +1442,7 @@ a {
 
         .January’s-Promo__btn {
             margin: 0px 0 0 0;
+            top: -12px;
         }
 
         .blog__logo {
@@ -1583,9 +1661,7 @@ a {
     .footer__text {
         width: 70%;
     }
-    .footer__text span {
-        display: inline;
-    }
+   
 
     .about {
         flex: 1 0 100%;
@@ -1614,11 +1690,14 @@ a {
         flex-direction: column;
         padding: 38px 0 0 7px;
     }
-
     .other__title {
-        font-size: 41px;
-
+        font-size: 32px;
     }
+    .other__menu {
+        margin: 0 0 0 -61px;
+        display: flex;
+        flex-direction: column;
+    }    
 
     .other__link {
         width: 110%;
@@ -1628,6 +1707,20 @@ a {
 }
 
 @media (max-width:688px) {
+    .italian-menu__inner {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 80px 13px 0 0px;
+    }
+    
+
+    .blog__subtitle {
+        margin: 166px 0 0 -106px;
+    }
+
     .input__btn {
         opacity: 0;
     }
@@ -1682,6 +1775,11 @@ a {
      
         height: 839px;
     }
+
+    .footer__icons {
+        display: flex;
+        margin-top: 45px;
+    }
 }
 
 @media (max-width: 560px) {
@@ -1706,7 +1804,7 @@ a {
 
     .input__block input {
         width: 38%;
-        margin: 87px 0 0 235px;
+        margin: 111px 0 0 181px;
         text-align: center;
         padding: 0 0 0 0px;
     }
@@ -1741,8 +1839,11 @@ a {
     }
 
     .All-Excursions__btn {
-        padding: 25px 12px 27px 15px;
-        min-width: 259px;
+        padding: 25px 12px 27px 49px;
+        min-width: 310px;
+    }
+    .All-Excursions__title {
+        width: 68%;
     }
 }
 
@@ -1932,12 +2033,15 @@ a {
         margin-left: 36px;
     }
 
-    .other {
-        padding: 60px 45px 0 0;
-    }
-
+    
     .other__title {
         font-size: 36px;
+    }
+
+    .January’s-Promo__btn {
+        white-space: nowrap;
+        min-width: 310px;
+        margin: 74px 0 0 0;
     }
 
     
